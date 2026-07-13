@@ -38,6 +38,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Projects darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+          <Route path="/" element={<Hero />} />
           
           {/* أي رابط غير معروف كيرجعك للرئيسية */}
           <Route path="*" element={<Navigate to="/" />} />
