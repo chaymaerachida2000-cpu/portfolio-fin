@@ -1,6 +1,6 @@
 import React from 'react';
 import './Hero.css';
-import SocialLinks from './SocialLinks';
+import SocialLinks from './Sociallinks';
 
 function Hero() {
   return (
