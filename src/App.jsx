@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Routes, Route, Navigate } from 'react-router-dom'; // زدنا Navigate
+import { Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -30,17 +30,11 @@ function App() {
       
       <main>
         <Routes>
-          {/* الروابط الرئيسية */}
           <Route path="/" element={<Hero />} />
-          <Route path="/home" element={<Hero />} /> {/* هادي كتحل مشكلة /Home */}
-          
-          {/* الصفحات الأخرى */}
+          <Route path="/home" element={<Hero />} />
           <Route path="/about" element={<About />} />
           <Route path="/project" element={<Projects darkMode={darkMode} />} />
           <Route path="/contact" element={<Contact darkMode={darkMode} />} />
-          <Route path="/" element={<Hero />} />
-          
-          {/* أي رابط غير معروف كيرجعك للرئيسية */}
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
