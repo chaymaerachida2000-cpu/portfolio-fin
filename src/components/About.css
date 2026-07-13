@@ -1,0 +1,48 @@
+/* About.css */
+.about-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+  transition: all 0.4s ease;
+}
+
+.dark .about-section {
+  background-color: #050505;
+}
+
+.about-container { max-width: 900px; margin: 0 auto; }
+
+.about-header h1 {
+  font-size: 3.5rem;
+  color: #a50e1b;
+  margin-bottom: 20px;
+}
+
+.intro-text { font-size: 1.3rem; line-height: 1.8; color: #333; }
+.dark .intro-text { color: #ddd; }
+
+/* التركيز على الـ Freelance والدمج بين التصميم والبرمجة */
+.freelance-highlight {
+  margin: 50px 0;
+  padding: 35px;
+  background: #fdf2f2;
+  border-left: 8px solid #a50e1b;
+  border-radius: 12px;
+}
+.dark .freelance-highlight { background: #1a0505; }
+
+.content-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+
+.card {
+  padding: 25px;
+  border: 2px solid #f0f0f0;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+.dark .card { border-color: #222; background: #111; }
+
+.card:hover { border-color: #a50e1b; }
+
+.skills-list { list-style: none; padding: 0; margin-top: 15px; }
+.skills-list li { margin: 10px 0; color: #555; }
+.dark .skills-list li { color: #aaa; }
+.skills-list span { font-weight: bold; color: #a50e1b; margin-right: 8px; }

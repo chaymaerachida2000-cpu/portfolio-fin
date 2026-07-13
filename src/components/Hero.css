@@ -1,0 +1,140 @@
+/* Hero.css */
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding-top: 120px;
+  padding-bottom: 0;
+  text-align: left;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  flex-grow: 1;
+}
+
+.hero-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.hero-avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+ 
+}
+.hero-avatar:hover {
+  transform: scale(1.05); /* التصويرة كتكبر شوية ملي كيدوز الماوس */
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.hero-text-content {
+  max-width: 600px;
+}
+
+.hero-text-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  
+  /* كنعطيو اللون الأول باش يبان فالبدية */
+  color: #ff0000; 
+  
+  /* كنعيطو للأنيميشن اللي غتبدل اللون */
+  animation: color-change 10s infinite;
+}
+
+/* كنعرفو التحريك (Keyframes) */
+@keyframes color-change {
+  50% { color: #a50e1b; }      /* اللون ديال الموقع (أحمر غامق) */
+  
+ 
+  40% { color: #554a4a;}
+
+  
+}
+
+/* ستايل البوطونة (Hero Buttons) */
+.hero-buttons {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 1rem 2.5rem;
+  background-color: #ebe0e0;
+  color: #100a0a !important;
+  font-weight: 600;
+  border-radius: 99px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid #363030;
+  cursor: pointer;
+ 
+  margin-bottom: 2rem;
+}
+
+.hero-buttons:hover {
+  background-color: #dc2626;
+  color: white !important;
+  transform: translateY(-3px);
+}
+
+.hero-buttons span {
+  transition: transform 0.3s ease;
+}
+
+.hero-buttons:hover span {
+  transform: translateY(5px);
+}
+
+/* Dark Mode لـ Hero Buttons */
+.dark .hero-buttons {
+  background-color: white;
+  color: #dc2626 !important;
+}
+
+.dark .hero-buttons:hover {
+  background-color: #ed1414 !important;
+  color: white !important;
+}
+
+/* الماركي */
+.hero-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 1.5rem 0;
+  
+  border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+  margin-top: auto;
+  background-color: rgba(255, 255, 255, 0.03); /* كيعطيها خلفية خفيفة بزاف */
+  border-top: 1px solid #554a4a;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 3rem;
+  animation: scroll 20s linear infinite;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-star {
+  color: rgb(43, 226, 92);
+}
