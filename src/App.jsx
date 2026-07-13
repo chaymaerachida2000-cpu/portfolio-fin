@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Project';
 import Contact from './components/Contact';
+import Footer from './components/Footer'; // 1. زيدي هاد السطر
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -38,6 +39,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </main>
+      <Footer /> {/* 4. حطي الـ Footer هنا لتحت */}
     </div>
   );
 }

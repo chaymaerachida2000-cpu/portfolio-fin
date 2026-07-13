@@ -6,7 +6,11 @@ function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="navbar bg-white dark:bg-[#121212] text-black dark:text-white transition-colors duration-300">
       <div className="nav-container">
-      <Link to="/" className="nav-logo">Chaimae.Said</Link>
+      <div className="nav-logo">
+        <Link to="/" onClick={() => setIsOpen(false)}>
+          Chaimae.Said
+        </Link>
+      </div>
         
        <ul className="nav-links">
           {/* دابا الـ Link خدامين بلا مشاكل */}
